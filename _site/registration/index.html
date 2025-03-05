@@ -23,9 +23,26 @@
   <!-- End Jekyll SEO tag -->
   <link rel="stylesheet" href="/assets/main.css">
   <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The Dynamic Radio Sky Conference 2025" />
+<style>
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #104fd5;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: none;
+        }
+
+        #backToTop:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header" role="banner">
+  <header id="top" class="site-header" role="banner">
     <img src="https://images.theconversation.com/files/598631/original/file-20240605-17-42xo6k.png" alt="Homepage image" style="width: 100%; max-height: 300px; object-fit: cover; display: block;">
     <div class="wrapper">
       <a class="site-title" rel="author" href="/">The Dynamic Radio Sky Conference 2025 | 28 July-1 August, 2025</a>
@@ -63,6 +80,17 @@
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSexcq-qPOqHHY5fSeo-0BDY0p4DnTU2n51L8OHlKLkSz3VtCA/viewform?embedded=true" width="750" height="1700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
     </div>
+    <a href="#top" id="backToTop">Back to Top</a>
+    <script>
+        window.onscroll = function() {
+            let button = document.getElementById("backToTop");
+            if (document.documentElement.scrollTop > 300) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
     </main>
     <footer class="site-footer h-card">
       <data class="u-url" href="/"></data>
