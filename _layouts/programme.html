@@ -23,9 +23,26 @@
   <!-- End Jekyll SEO tag -->
   <link rel="stylesheet" href="/assets/main.css">
   <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The Dynamic Radio Sky Conference 2025" />
+<style>
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #104fd5;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: none;
+        }
+
+        #backToTop:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header" role="banner">
+  <header id="top" class="site-header" role="banner">
     <img src="https://images.theconversation.com/files/598631/original/file-20240605-17-42xo6k.png" alt="Homepage image" style="width: 100%; max-height: 300px; object-fit: cover; display: block;">
     <div class="wrapper">
       <a class="site-title" rel="author" href="/">The Dynamic Radio Sky Conference 2025 | 28 July-1 August, 2025</a>
@@ -71,20 +88,24 @@
   
           <!-- Announcements at 9:50 AM -->
           <tr>
-            <td>9:50 AM</td>
-            <td>Announcements</td>
-            <td>Announcements</td>
-            <td>Announcements</td>
-            <td>Announcements</td>
-            <td>Announcements</td>
+            <td>09:00</td>
+            <td>Registration</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>09:30</td>
+            <td colspan="5" style="text-align: center;"> Morning Tea</td>
           </tr>
           <tr>
             <td></td>
             <td colspan="5" style="text-align: center;">Morning Chair: Chair Name</td>
           </tr>
           <tr>
-            <td>10:00 AM</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+            <td>10:00</td>
+            <td>Welcome</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
@@ -92,15 +113,15 @@
           </tr>
           <!-- Repeat for each 20-minute slot -->
           <tr>
-            <td>10:20 AM</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+            <td>10:20</td>
+            <td>Housekeeping</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
           </tr>
           <tr>
-            <td>10:40 AM</td>
+            <td>10:40</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
@@ -109,11 +130,11 @@
           </tr>
           <!-- Coffee break at 11:00 AM -->
           <tr>
-            <td>11:00 AM</td>
+            <td>11:00</td>
             <td colspan="5" style="text-align: center;">Coffee Break</td>
           </tr>
           <tr>
-            <td>11:20 AM</td>
+            <td>11:20</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
@@ -121,7 +142,7 @@
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
           </tr>
           <tr>
-            <td>11:40 AM</td>
+            <td>11:40</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
@@ -129,7 +150,7 @@
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
           </tr>
           <tr>
-            <td>12:00 PM</td>
+            <td>12:00</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
@@ -137,98 +158,105 @@
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
           </tr>
           <tr>
-            <td>12:20 PM</td>
+            <td>12:20</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+            <td>Wrap up and Finish</td>
           </tr>
           <!-- Lunch break from 12:30 PM to 1:30 PM -->
           <tr>
-            <td></td>
+            <td>12:40</td>
             <td colspan="5" style="text-align: center;">Lunch Break</td>
           </tr>
           <!-- Afternoon Chair -->
           <tr>
             <td></td>
-            <td colspan="5" style="text-align: center;">Afternoon Chair: Chair Name</td>
+            <td colspan="2" style="text-align: center;">Afternoon Chair: Chair Name</td>
+            <td rowspan="11" style="text-align: center;">Social Activity</td>
+            <td>Afternoon Chair: Chair Name</td>
+            <td rowspan="11"></td>
           </tr>
           <tr>
-            <td>1:30 PM</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-          </tr>
-          <tr>
-            <td>1:50 PM</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+            <td>13:30</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
           </tr>
           <tr>
-            <td>2:10 PM</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-          </tr>
-          <tr>
-            <td>2:30 PM</td>
-            <td colspan="5" style="text-align: center;">Coffee Break</td>
-          </tr>
-          <tr>
-            <td>2:50 PM</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+            <td>13:50</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
           </tr>
           <tr>
-            <td>3:10 PM</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-          </tr>
-          <tr>
-            <td>3:30 PM</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+            <td>14:10</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
           </tr>
           <tr>
-            <td>3:50 PM</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
-            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+            <td>14:30</td>
+            <td colspan="2" style="text-align: center;">Coffee Break</td>
+            <td>Coffee Break</td>
+          </tr>
+          <tr>
+            <td>14:50</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
             <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
           </tr>
           <tr>
-            <td>4:10 PM</td>
-            <td>Closing remarks</td>
-            <td>Closing remarks</td>
+            <td>15:10</td>
+            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+          </tr>
+          <tr>
+            <td>15:30</td>
+            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+          </tr>
+          <tr>
+            <td>15:50</td>
+            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+            <td><a href="https://dummyurl.com">Presentation Title</a><br>Author</td>
+          </tr>
+          <tr>
+            <td>16:10</td>
             <td>Closing remarks</td>
             <td>Closing remarks</td>
             <td>Closing remarks</td>
           </tr>
           <tr>
-            <td>4:30 PM</td>
-            <td colspan="5" style="text-align: center;">End of Day</td>
+            <td>16:30</td>
+            <td colspan="2" style="text-align: center;">End of Day</td>
+            <td colspan="1" style="text-align: center;">End of Day</td>
           </tr>
+          <tr>
+            <td>19:00</td>
+            <td></td>
+            <td>Conference Dinner</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tbody>
       </table>
     </div>
+  <a href="#top" id="backToTop">Back to Top</a>
+    <script>
+        window.onscroll = function() {
+            let button = document.getElementById("backToTop");
+            if (document.documentElement.scrollTop > 300) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
   </main>
   <footer class="site-footer h-card">
     <data class="u-url" href="/"></data>
