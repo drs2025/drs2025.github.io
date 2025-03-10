@@ -21,9 +21,7 @@
 title: The Dynamic Radio Sky Conference 2025
 email: dynamicradiosky2025@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This conference is dedicated to the broad area of radio time domain astronomy, and reflects 
-  the advances in the field over the past several years, as we work towards the transformational 
-  capabilities of the SKA.
+  28 July-1 August, 2025.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
